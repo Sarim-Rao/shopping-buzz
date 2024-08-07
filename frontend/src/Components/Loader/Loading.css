@@ -1,0 +1,31 @@
+.center-things {
+    display: flex;
+    flex-direction: column;
+    margin-left: var(--horizontal-margin);
+    margin-right: var(--horizontal-margin);
+    margin-top: 2em;
+    padding: 2em;
+    box-shadow: 0 0 0 1px rgba(130, 120, 120, 0.2);
+    border-radius: 8px;
+}
+@media screen and (max-width: 992px) {
+    :root {
+        --horizontal-margin: 0;
+    }
+    .center-things:first-child {
+        margin-top: 0;
+    }
+}
+.profile {
+    display: flex;
+    flex-direction: row;
+}
+.profile-data {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    padding: 0 0 10px 10px;
+}
+.profile-data .shimmer-line:first-child {
+    margin-top: 15px;
+}
